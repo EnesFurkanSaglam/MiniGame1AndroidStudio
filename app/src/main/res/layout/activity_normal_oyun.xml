@@ -10,8 +10,7 @@
         android:id="@+id/textViewBilgi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
-        android:text="6 Harfli İlimiz"
+        android:layout_marginTop="200dp"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,43 +19,41 @@
 
     <Button
         android:id="@+id/btnHarfAl"
-        android:layout_width="0dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="250dp"
         android:onClick="btnHarfAl"
         android:text="Harf Al"
         android:textColorHighlight="#673AB7"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnTahminEt"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnTahminEt"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/editTextTahminGir" />
 
     <Button
         android:id="@+id/btnTahminEt"
-        android:layout_width="0dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="250dp"
         android:onClick="btnTahminEt"
         android:text="Tahmin Et "
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnHarfAl"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTahminGir" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTahminGir" />
 
     <EditText
         android:id="@+id/editTextTahminGir"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="text"
         android:text="Tahmininizi Giriniz"
         android:textAlignment="center"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnTahminEt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewIpucu" />
@@ -65,12 +62,11 @@
         android:id="@+id/textViewIpucu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="50dp"
-        android:text="_ _ _ _ _ _"
+        android:layout_marginTop="20dp"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textViewBilgi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewBilgi" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
