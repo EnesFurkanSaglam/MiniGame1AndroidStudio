@@ -7,26 +7,50 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnNormalOyun"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:onClick="btnAnaSayfa"
         android:text="Normal Oyun"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="239dp" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOyunIsmi" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnSureliOyun"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="btnAnaSayfa"
         android:text="Süreli oyun"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="325dp" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNormalOyun" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnCıkıs"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="btnAnaSayfa"
+        android:text="Çıkış"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSureliOyun" />
+
+    <TextView
+        android:id="@+id/textViewOyunIsmi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Çıkış"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="411dp" />
+        android:layout_marginTop="150dp"
+        android:text="İsim Şehir Oyunu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
